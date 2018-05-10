@@ -89,7 +89,12 @@ In machine learning problems that involve learning a "state-of-nature" from a fi
 \section{The Mathematics Curriculum}
 Linear Function linear mapping
 
-Eigenvalues and eigenvectors
+\subsection{Eigenvalues nad -vectors of a matrix}
+Multiplying a vector by a matrix, $Ax$, usually rotates the vector $x$, however, in some cases of x, $Ax$ is parallel to x, i.e.
+\begin{equation}
+Ax = \lambda x
+\end{equation}
+for some $\lambda$. The number $\lambda$ is an \textit{eigenvalue} of matrix $A$, if there exists a vector $x$, such that $A\text{x} = \lambda x$. The vector x is an \textit{eigenvector} corresponding to eigenvalue $\lambda$.
 
 gradients to matrices
 
@@ -156,7 +161,7 @@ between variables $x_i$ and $x_j$.
 \subsection{Distributions}
 
 \subsubsection{Bernoulli Distribution}
-A \textbf{Bernoulli trial} is a random experiment where a random variable has exactly two possible outcomes, $X \in \{0,1\}$. Then, $X$ is said to follow a \textit{Bernoulli distribution}, denoted $X \sim \mathbb{B}(p)$,  with corresponding PDF
+A \textit{Bernoulli trial} is a random experiment where a random variable has exactly two possible outcomes, $X \in \{0,1\}$. Then, $X$ is said to follow a \textit{Bernoulli distribution}, denoted $X \sim \mathbb{B}(p)$,  with corresponding PDF
 \begin{equation}
 \text{Pr}(X=k|p) \ = \ p^k(1-p)^{1-k}
 \end{equation}
@@ -178,16 +183,6 @@ and
 \end{itemize}
 For a single trial, i.e. $n=1$, the binomial distribution is a Bernoulli distribution.
 
-\subsubsection{Uniform Distribution}
-\begin{equation}
-\text{Pr}(X=k|p) \ = \ p^k(1-p)^{1-k}
-\end{equation}
-and
-\begin{itemize}
-	\item $\mathbb{E}[X] = p$
-	\item $\text{var}[X] = p(1-p)$
-\end{itemize}
-
 \subsubsection{Poisson Distribution}
 The Poisson distribution is a discrete probability distribution that expresses the occurrences of some event over a specified interval. The probability of observing $k$ events in an interval is given by equation
 \begin{equation}
@@ -199,8 +194,19 @@ and
 	\item $\text{var}[X] = \lambda$
 \end{itemize}
 
+\subsubsection{Uniform Distribution}
+
+\begin{equation}
+\text{Pr}(X=k|p) \ = \ p^k(1-p)^{1-k}
+\end{equation}
+and
+\begin{itemize}
+	\item $\mathbb{E}[X] = p$
+	\item $\text{var}[X] = p(1-p)$
+\end{itemize}
+
 \subsubsection{Normal Distribution}
-The Normal distribution, denoted $\mathbb{N}(\mu,\sigma^2)$, has a PDF of form
+The Normal distribution, denoted $\mathcal{N}(\mu,\sigma^2)$, has a PDF of form
 \begin{equation}
 p(x|\mu,\sigma^2) \ = \ \frac{1}{\sqrt{2\pi\sigma^2}} \exp{\left(-\frac{1}{2\sigma^2}(x-\mu)^2\right)}
 \end{equation}
@@ -215,6 +221,28 @@ p\left( \textbf{x} | \boldmath{\mu} , \sigma^2 \right) \ = \ \frac{1}{\sqrt{(2\p
 \end{equation}
 
 The covariance matrix $\Sigma$ of a Gaussian must be symmetric and positive definite - this is equivalent to requiring $|\Sigma| > 0$. Otherwise, the formula does not correspond to a valid PDF, since equation would no longer be real-valued if $|\Sigma| \leq 0$.
+
+
+\subsection{Standard Normal Distribution}
+For th special case when $\mu = 0$ and $\sigma=1$ the normal distribution is known as \textit{standard normal distribution} with BDF
+\begin{equation}
+\phi(x) \ = \ \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}x^2}
+\end{equation}
+
+\subsection{Beta Distribution}
+The PDF of the \textit{Beta Distribution}, denoted $X \sim \text{Beta}(\alpha, \beta)$, is defined on the interval $\left[0,1\right]$, with shape parameters $\alpha, \beta > 0$ as
+\begin{equation}
+p(x|\alpha,\beta) \ = \ \frac{(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1}(1-x)^{\beta-1} \ = \ \frac{1}{\text{B}(\alpha,\beta)} x^{\alpha-1}(1-x)^{\beta-1}
+\end{equation}
+where $\Gamma$ is the gamma function and B is the beta function.
+
+
+\subsection{Gamma Distribution}
+
+
+\subsection{Inverse Gamma Distribution}
+
+
 
 \section{The Baysian Paradigm}
 The Bayesian theory of probability is concerened with how information is used to update subjective prior believes. In general, given that we have a model of the world described by a unknown parameter (vector) $\theta$ and observable data \textbf{y}, our goal ist to determine the model, i.e. the unkonwn parameters, from the data.
@@ -360,13 +388,16 @@ The curse of dimensionality in the k-NN context basically means that Euclidean d
 
 Feature extraction and dimension reduction can be combined in one step using principal component analysis (PCA), linear discriminant analysis (LDA), or canonical correlation analysis (CCA) techniques as a pre-processing step, followed by clustering by k-NN on feature vectors in reduced-dimension space. In machine learning this process is also called low-dimensional embedding
 
-\subsection{Classification and Regression Trees}
-Linear regression\footnote{http://www.stat.cmu.edu/~cshalizi/350-2006/lecture-10.pdf} is a global model with a single predictive formula
-holding over the entire data-space. When the data has lots of features
-which interact in complicated, nonlinear ways, assembling a single global model
-will not be sufficient to describe the data behavior. 
+\subsection{Support Vector Machines  (SVM)}
+A support vector machine constructs a hyperplane or set of hyperplanes in a high- or infinite-dimensional space, which can be used for classification, regression, or other tasks like outliers detection[3]. Intuitively, a good separation is achieved by the hyperplane that has the largest distance to the nearest training-data point of any class (so-called functional margin), since in general the larger the margin the lower the generalization error of the classifier.
 
-\textbf{Decision Trees} are a non-parametric supervised learning method used for classification and regression. A decision tree learning algorithm partitions a data set into smaller disjunct sets, the \textbf{leaves} or \textbf{terminal nodes}, using simple if-else decision rules inferred from the data features.
+
+
+\subsection{Classification and Regression Trees}
+\textit{Decision Trees} are a non-parametric supervised learning method used for classification and regression. 
+
+\subsubsection{Decision Tree Learning}
+A decision tree learning algorithm partitions a data set into smaller disjunct sets, the \textit{leaves} or \textit{terminal nodes}, using simple if-else decision rules inferred from the data features.
 
 Given a labeled training sample $\{x_i,y_i\}_{i=1}^N$ with $x_i \in \mathbb{R}^d$ and target $y_i \in \mathbb{R}^N$ a decision tree recursively partitions the data space $\mathcal{X}$ into $l$ disjoint sets $\mathcal{A}_1, \dots,\mathcal{A}_c$, such that the predicted value of $y_i$ is $j$ if $x_i$ belongs to $\mathcal{A}_j$ for $j = 1, \dots, c$.
 
@@ -501,12 +532,21 @@ The disadvantages of GBRT are:
 
 \section{Unsupervised Learning}
 
-\subsection{Principal Component Analysis (PCA)}
-\textit{Principal component analysis} (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called \textit{principal components}. If there are $N$ observations with $K$ variables, then the number of distinct principal components is  $\min(N-1,K)$. This transformation is defined in such a way that the first principal component has the largest possible variance (that is, accounts for as much of the variability in the data as possible), and each succeeding component in turn has the highest variance possible under the constraint that it is orthogonal to the preceding components. The resulting vectors are an uncorrelated orthogonal basis set. PCA is sensitive to the relative scaling of the original variables.
+\subsection{Cluster Analysis}
+\textit{Cluster analysis} or \textit{clustering} is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters).
 
-PCA is the simplest of the true eigenvector-based multivariate analyses. Often, its operation can be thought of as revealing the internal structure of the data in a way that best explains the variance in the data. If a multivariate dataset is visualised as a set of coordinates in a high-dimensional data space (1 axis per variable), PCA can supply the user with a lower-dimensional picture, a projection of this object when viewed from its most informative viewpoint. This is done by using only the first few principal components so that the dimensionality of the transformed data is reduced.
+\subsection{Principal Component Analysis (PCA)}
+PCA is mathematically defined as an orthogonal linear transformation that transforms the data to a new lower-dimensional coordinate system such that the greatest variance by some projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.
+
+
+
+Normalization is important in PCA since it is a variance maximizing exercise. It projects your original data onto directions which maximize the variance\footnote{https://stats.stackexchange.com/questions/69157/why-do-we-need-to-normalize-data-before-principal-component-analysis-pca}. 
+
+https://stackoverflow.com/questions/31909945/obtain-eigen-values-and-vectors-from-sklearn-pca
 
 https://stackoverflow.com/questions/22984335/recovering-features-names-of-explained-variance-ratio-in-pca-with-sklearn
+
+Technically, PCA is used to find the Eigenvalues $\lambda_j$ und Eingenvectors $\nu_j$ of the data correlation matrix $\Sigma = Y^T Y$, where $Y = X - \mu_X$ and $X$ is an $N \times K$ matrix of data points. $K$ corresponds to the number of features.
 
 
 \section{Model Selection}
@@ -555,6 +595,17 @@ This example shows the ROC response of different datasets, created from K-fold c
 
 \section{Artificial Neural Networks}
 
+\subsection{Artificial Neuron}
+
+\subsection{Perceptron Learning}
+The \textit{Perceptron} is an algorithm for learning a binary classifier: a mapping function $\text{y}=f(\text{x})$ of a real-valued input (vector) x to a binary output or target y
+\begin{equation}
+f(\text{x}) \ = \ \begin{cases}
+0 & \text{if} \ \omega \cdot \text{x} + \text{b} \\
+1 & \text{otherwise}
+\end{cases}
+\end{equation}
+where $\omega$ is a real-valued vector of weights, $\omega \cdot \text{x}$ is the dot product $\sum_{i=1}^N \omega_i x_i$, $N$ is the total number of inputs to the neuron, and b is the \textit{bias}. The bias shifts the decision boundary away from the origin and does not depend on any input value.
 
 
 http://cs229.stanford.edu/notes/cs229-notes2.pdf
@@ -570,10 +621,20 @@ risk management
 bayes krankheit bespiel verstehen
 
 
-blockchain
+\section{Blockchain}
+A \textit{Blockchain} is an \textit{immutable}, \textit{sequential} chain of records called \textit{Blocks}. They can contain transactions, files or any other data which are chained together using \textit{hashes}.
+
+Each Block has an \textit{index}, a \textit{timestamp} (in Unix time), a \textit{list of transactions}, a \textit{proof} and the \textit{hash of the previous block}. The hash of the previous block is what gives the Blockchain its immutability. TH first block in the chain is called \textit{genesis} block as it has no predecessors
+
+\subsection{Proof of work algoritj}
+A \textit{Proof of Woork} algorithm (PoW) is the process of creating or \textit{mining} a new block on the blockchain. The goal of the PoW is to discover a number that is computationally difficult to find, but at the same time easy to verify by anyone in the network.
+
+In Bitcoin, the PoW algorithm is called \textit{HashCash}. In general, the difficulty is determined by the number of characters searched for in a string. The miners are then rewarded for their solution by receiving a coin -  in a transaction.
+
 
 markov process
 
+https://hackernoon.com/learn-blockchains-by-building-one-117428612f46
 
 \section{Data Warehousing}
 acid

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.9)  25 APR 2018 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.9)  9 MAY 2018 19:18
 entering extended mode
 **./data_science_curriculum.tex
 (data_science_curriculum.tex
@@ -289,63 +289,35 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 {C:/Users/Daniel.Acatay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
  [3]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 144.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 149.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 144
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 149
 .
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 144.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 149.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 144
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 149
 .
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 144.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 149.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 144
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 149
 .
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 144.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 149.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 144
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 149
 .
 
 [4] [5]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 208.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 208
-.
-
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 210.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 210
-.
-
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 210.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 210
-.
-
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 210.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 210
-.
-
-
 LaTeX Font Warning: Command \boldmath invalid in math mode on input line 214.
 
 
@@ -353,60 +325,80 @@ LaTeX Font Warning: Command \mathversion invalid in math mode on input line 214
 .
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 214.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 216.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 214
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 216
 .
 
-[6] [7] [8] [9]
-<./img/tree_decision_surface.pdf, id=46, 1156.32pt x 722.7pt>
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 216.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 216
+.
+
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 216.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 216
+.
+
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 220.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 220
+.
+
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 220.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 220
+.
+
+[6] [7] [8] [9] [10]
+<./img/tree_decision_surface.pdf, id=50, 1156.32pt x 722.7pt>
 File: ./img/tree_decision_surface.pdf Graphic file (type pdf)
 <use ./img/tree_decision_surface.pdf>
-Package pdftex.def Info: ./img/tree_decision_surface.pdf  used on input line 39
-8.
-(pdftex.def)             Requested size: 469.47046pt x 293.41971pt.
- [10]
-<./img/tree_regression.pdf, id=53, 1156.32pt x 722.7pt>
-File: ./img/tree_regression.pdf Graphic file (type pdf)
-<use ./img/tree_regression.pdf>
-Package pdftex.def Info: ./img/tree_regression.pdf  used on input line 410.
+Package pdftex.def Info: ./img/tree_decision_surface.pdf  used on input line 42
+9.
 (pdftex.def)             Requested size: 469.47046pt x 293.41971pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./img/tree_decision_surface.pdf>] [12 <./img/tree_regression.pdf>]
-[13] [14] [15]
-Overfull \hbox (16.52751pt too wide) in paragraph at lines 509--510
+[11]
+<./img/tree_regression.pdf, id=55, 1156.32pt x 722.7pt>
+File: ./img/tree_regression.pdf Graphic file (type pdf)
+<use ./img/tree_regression.pdf>
+Package pdftex.def Info: ./img/tree_regression.pdf  used on input line 441.
+(pdftex.def)             Requested size: 469.47046pt x 293.41971pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./img/tree_decision_surface.pdf>] [13 <./img/tree_regression.pdf>]
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[][]\OT1/cmr/m/n/9 https://stats.stackexchange.com/questions/69157/why-do-we-ne
+ed-to-normalize-data-before-principal-
+ []
+
+
+Overfull \hbox (22.49834pt too wide) in paragraph at lines 545--546
+[]\OT1/cmr/m/n/10.95 https://stackoverflow.com/questions/31909945/obtain-eigen-
+values-and-vectors-from-sklearn-pca 
+ []
+
+
+Overfull \hbox (16.52751pt too wide) in paragraph at lines 547--548
 []\OT1/cmr/m/n/10.95 https://stackoverflow.com/questions/22984335/recovering-fe
 atures-names-of-explained-variance-ratio-
  []
 
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
 [16]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -420,24 +412,49 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-<./img/Precisionrecall.pdf, id=129, 331.23747pt x 602.25pt>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [17]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+<./img/Precisionrecall.pdf, id=132, 331.23747pt x 602.25pt>
 File: ./img/Precisionrecall.pdf Graphic file (type pdf)
 <use ./img/Precisionrecall.pdf>
-Package pdftex.def Info: ./img/Precisionrecall.pdf  used on input line 550.
+Package pdftex.def Info: ./img/Precisionrecall.pdf  used on input line 590.
 (pdftex.def)             Requested size: 331.23665pt x 602.24852pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17] [18 <./img/Precisionrecall.pdf>] [19] (data_science_curriculum.aux) ) 
+[18] [19 <./img/Precisionrecall.pdf>] [20] (data_science_curriculum.aux) ) 
 Here is how much of TeX's memory you used:
  2586 strings out of 493305
- 36703 string characters out of 3126323
- 98008 words of memory out of 3000000
+ 36701 string characters out of 3126323
+ 97008 words of memory out of 3000000
  6078 multiletter control sequences out of 15000+200000
  16518 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,26p,904b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,26p,737b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/U
 sers/Daniel.Acatay/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmbsy10.pfb><C:/Users/Daniel.Acatay/AppData/Local/Programs/MiKTeX 2.9/font
@@ -469,9 +486,9 @@ lic/lm/lmr12.pfb><C:/Users/Daniel.Acatay/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/lm/lmr17.pfb><C:/Users/Daniel.Acatay/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Daniel.Acatay/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on data_science_curriculum.pdf (19 pages, 782566 bytes).
+Output written on data_science_curriculum.pdf (20 pages, 788353 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 217 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
